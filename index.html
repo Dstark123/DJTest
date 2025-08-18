@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Implementation & Orders Chronicle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- 
+    Palette & Design Notes:
+    - Primary Colors: #212529 (dark text), #F8F9FA (light background)
+    - Accent Colors: #70A1D7 (blue), #4A47A3 (purple), #E76F51 (orange), #F4A261 (peach)
+    - Font: 'Inter' for a clean, professional look.
+    - Layout: A responsive grid layout with distinct card-like sections to visually separate content and improve readability.
+    - Icons: Simple emojis are used for a friendly, engaging touch without requiring external image assets.
+    - Overall Goal: To present the newsletter's information in an organized, modern, and easily scannable format.
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA;
+        }
+    </style>
+</head>
+<body class="text-[#343A40]">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black text-[#212529]">The Implementation & Orders Chronicle</h1>
+            <p class="text-lg text-[#70A1D7] mt-2">Issue No. 1 | 2025 Week 34</p>
+        </header>
+        
+        <!-- New Introduction Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-[#212529] mb-4">A Note from the Editor</h2>
+            <p class="text-gray-600 mb-4">Hello, everyone! Welcome to what I hope will become a regular, weekly newsletter. The inspiration for this started during last week's QBR. I was listening to the discussion about sharing information, and it got me thinking about how we could do it better. I even complained to Alexis about the lack of a simple newsletter to get information out! So, instead of waiting for someone else to create one, I decided to take the initiative myself and build something specifically for our team.</p>
+            <p class="text-gray-600">This is a new endeavor, and I'm still figuring out the rhythm, so please bear with me. The content, format, and topics are all flexible. If you have suggestions or anything you'd like to see included, please don't hesitate to reach out. My goal is for this to become a truly useful tool for our team, and your input is key to making that happen.</p>
+        </section>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Last Week's Go-Lives -->
+            <section class="md:col-span-2 lg:col-span-2 bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-[#212529] mb-4">Last Week's Go-Lives</h2>
+                <p class="text-gray-600 mb-6">A huge congratulations to the team for successfully implementing the following projects last week:</p>
+                <ul class="list-disc list-inside space-y-2 text-[#343A40] text-lg">
+                    <li>Ralph's Coffee Bar and Cafe</li>
+                    <li>Grandpa's Cafe</li>
+                    <li>Gina Anns</li>
+                    <li>Uncle Chubby's Inc</li>
+                    <li>Spinner's Sports</li>
+                    <li>Terrapin Bakery</li>
+                    <li>Short Pump Pour House</li>
+                    <li>Chills and Thrills Ice Cream</li>
+                    <li>The Trailer</li>
+                    <li>NUTTYS JUNK YARD GRILL</li>
+                    <li>Scoops and Treats</li>
+                    <li>BAM Keller</li>
+                    <li>BAM Maineville</li>
+                </ul>
+            </section>
+
+            <!-- This Week's Wins - Highlighted -->
+            <section class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-center text-center">
+                 <h2 class="text-2xl font-bold text-[#212529] mb-4">This Week's Wins</h2>
+                 <div class="bg-[#F4A261] p-6 rounded-lg w-full mb-4">
+                    <p class="text-3xl font-black text-white">Scoops and Treats</p>
+                    <p class="text-lg font-semibold text-white mt-2">Live in Just 5 Days!</p>
+                 </div>
+                 <p class="text-gray-600 text-left">This account landed on a Monday with the hope of an extreme turnaround time of that same Friday. While this is an unrealistic expectation, with some very quick communication between menu, trainers and hardware, we were able to devote time to quickly work on this account. Thanks to this coordination from all of our teams we were able to meet this merchant's expectations and have them live in just 5 days! While this not within our normal expectations it is amazing to see the teams all pull together and do some incredible work.</p>
+            </section>
+
+            <!-- Employee Spotlight -->
+            <section class="bg-white rounded-lg shadow-md p-6 text-center">
+                <h2 class="text-2xl font-bold text-[#212529] mb-4">Employee Spotlight</h2>
+                <div class="bg-[#E76F51] text-white rounded-full w-32 h-32 flex items-center justify-center mx-auto text-6xl">✨</div>
+                <h3 class="text-2xl font-bold mt-4 text-[#212529]">Danielle Ewert</h3>
+                <p class="text-gray-600 mt-2">This week, we are shining the spotlight on Danielle Ewert for her outstanding leadership and dedication. Her positive attitude and commitment to the team's success are a constant source of inspiration. Thank you, Danielle!</p>
+            </section>
+
+            <!-- Birthdays & Anniversaries -->
+            <section class="md:col-span-2 lg:col-span-2 bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-[#212529] mb-4">Birthdays & Anniversaries</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#4A47A3] mb-2">Happy Birthday! 🎂</h3>
+                        <ul class="list-disc list-inside space-y-2 text-[#343A40] text-lg">
+                            <li>Cheryl Baxter (August 22)</li>
+                            <li>Jason Glenn (August 23)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#4A47A3] mb-2">Happy Anniversary! 🎉</h3>
+                        <ul class="list-disc list-inside space-y-2 text-[#343A40] text-lg">
+                            <li>Amber Devine (August 3, 5 years)</li>
+                            <li>Rodrigo Gabriel III Mortiz (August 7, 2 years)</li>
+                            <li>Vina Aguilar (August 7, 2 years)</li>
+                            <li>Jose Rodriguez Valencia (August 14, 2 years)</li>
+                            <li>Naisha Stamenovic (August 14, 2 years)</li>
+                            <li>Lee Cohen (August 6, 18 years)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Did You Know? -->
+            <section class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-[#212529] mb-4">Did You Know?</h2>
+                <p class="text-gray-600 mb-4">A tidbit from our fearless leader Danielle Ewert in regards to the recently attended QBR meetings in the HSC last week</p>
+                <p class="text-gray-600 mb-4">Getting together for the mid-year **Quarterly Business Review (QBR)** was a fantastic opportunity to share ideas and appreciate the team's achievements. It's truly eye-opening to see our metrics in a six-month view and reflect on the tremendous strides we've made, especially given the current environment. The initiatives we have in progress are nothing short of miraculous.</p>
+                <p class="text-gray-600">Looking ahead, get ready to buckle up! This time next year, our QBR will be all about **Genius**, including the new **Genius for Enterprise** platform. This is a huge step for us and a testament to the hard work everyone is putting in.</p>
+            </section>
+            
+            <!-- Important Dates & App Updates -->
+            <section class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-[#212529] mb-4">Important Dates & App Updates</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-[#4A47A3]">Implementation & Orders Monthly All Hands</h3>
+                        <p class="font-semibold">Date: Friday, August 22</p>
+                        <p class="text-gray-600">Time: 10:00 – 11:00 am (America/New_York)</p>
+                        <p class="text-gray-600">Location: Google Meet</p>
+                        <a href="https://meet.google.com/xoz-tphx-wfe" target="_blank" class="mt-2 inline-block bg-[#4A47A3] text-white py-2 px-4 rounded-lg hover:bg-[#2A2859] transition-colors">Join Video Call</a>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-[#4A47A3]">Restaurant and Retail App Update Info</h3>
+                        <p class="text-sm text-gray-600 mt-2">Here are some recent updates for our Restaurant and Retail apps:</p>
+                        <ul class="mt-2 space-y-2 text-sm">
+                            <li><a href="https://springboardretail.wistia.com/medias/f85wsynfte" target="_blank" class="text-[#70A1D7] hover:underline">Heartland Retail Did You Know 2025.08.120 Preview August 12, 2025</a></li>
+                            <li><a href="https://heartlandpos.zendesk.com/hc/en-us/articles/39335982581275-Genius-for-Restaurants-Release-Notes-2-36" target="_blank" class="text-[#70A1D7] hover:underline">Genius for Restaurants Release Notes 2.36</a></li>
+                        </ul>
+                        <h4 class="font-bold text-base mt-4 text-[#4A47A3]">Genius Classic Release Notes 9.107</h4>
+                        <p class="text-sm text-gray-600 mt-2">A new version of Genius for Restaurants Classic is expected to be released on **Tuesday, August 26th, 2025**.</p>
+                        <p class="text-sm text-gray-600 mt-2">**Fixes in this version:**</p>
+                        <ul class="list-disc list-inside space-y-1 text-sm text-gray-600">
+                            <li>HR-65666 - Rush item kitchen slip is not reprinted when removed from the KDS.</li>
+                            <li>HR-65665 - Kitchen printer printing Como name not Guest name.</li>
+                            <li>HR-65452 - Receipt shows Status:Failed on approved transactions.</li>
+                            <li>HR-65071 - Discount applied for more than 100%.</li>
+                            <li>HR-64866 - Drill down on Report Categories Not Showing Data Prior to 2023.</li>
+                            <li>HR-64147 - Avero Integration Time Conversion when Importing.</li>
+                            <li>HR-62585 - DoorDash Orders successful but do not reach the POS.</li>
+                            <li>HR-60024 - Wisecube: cannot pay the Pre-authorized tickets with a different card.</li>
+                            <li>HR-53629 - DSR does not include adjustment of bad debt.</li>
+                            <li>HR-42056 - Prices rang in under configured price unexpectedly.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
